@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Reporting"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="pw-regression-test-automation(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TC_SDK_Client_Context_Income_Argyle">
+        <methods>
+          <include name="getRandomMobileNumber"/>
+          <include name="getRandomEmailId"/>
+          <include name="tearDown"/>
+          <include name="incomeVerification" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TC_SDK_Client_Context_Income_Argyle -->
+    </classes>
+  </test> <!-- pw-regression-test-automation(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

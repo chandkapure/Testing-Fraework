@@ -1,0 +1,63 @@
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.paywallet.Listeners.Listeners" />
+        <listener class-name="com.paywallet.Utilities.RunFailedTestcases" />
+    </listeners>
+
+    <test name="pw-regression-test-automation" parallel="classes" thread-count="45" >
+
+        <classes>
+            ClientContext Testcases
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Affordability_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Affordability_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Allocation_DepositAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Allocation_DepositAllocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_PDSupportFalseAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_PDSupportFalseAllocationAtomicFI"/>
+
+            CustomerContext Testcases
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_Affordability_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_Affordability_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_DepositAllocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_DepositAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReEntryVerification_Verification_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReEntryVerification_Verification_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReEntryVerification_Allocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReEntryVerification_Allocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReStart_Verification_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReStart_Verification_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_ReStart_Allocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_Restart_Allocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_RestartAllocation_Update_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_RestartAllocation_Cancel_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_DepositAllocation_Update_Cancel_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_DepositAllocation_Update_Cancel_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_PDSupportFalseAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Customer_Context_PDSupportFalseAllocation_AtomicFI"/>
+
+
+            Code Convergence API TestCases
+
+            <class name="com.paywallet.APITestCase.TC_CC_API_AffordabilityVerification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_AffordabilityVerification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Verification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Verification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Cancel_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Cancel_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Update_Cancel_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Update_Cancel_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Verification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Verification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PDSupportFalse_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PDSupportFalse_AtomicFI"/>
+
+        </classes>
+    </test>
+</suite>

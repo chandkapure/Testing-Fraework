@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.paywallet.Listeners.Listeners" />
+        <listener class-name="com.paywallet.Utilities.RunFailedTestcases" />
+    </listeners>
+
+    <test name="pw-regression-test-automation" parallel="classes" thread-count="36" >
+        <classes>
+                           <!--Code Convergence TestCase-->
+            <class name="com.paywallet.APITestCase.TC_CC_API_AffordabilityVerification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_AffordabilityVerification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_EmploymentVerification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_EmploymentVerification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_IncomeVerification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_IncomeVerification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Verification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Verification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_UpdateProfile_Verification_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_AccountOwnership_Finicity"/>
+            <class name="com.paywallet.APITestCase.TC_CC_AccountOwnership_Lyons"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Update_Cancel_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Update_Cancel_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Cancel_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_Allocation_Cancel_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Verification_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Verification_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Allocation_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PostRestart_Allocation_AtomicFI"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PDSupportFalse_Argyle"/>
+            <class name="com.paywallet.APITestCase.TC_CC_API_PDSupportFalse_AtomicFI"/>
+
+        </classes>
+    </test>
+</suite>

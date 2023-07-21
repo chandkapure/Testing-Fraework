@@ -1,0 +1,30 @@
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.paywallet.Listeners.Listeners" />
+        <listener class-name="com.paywallet.Utilities.RunFailedTestcases" />
+    </listeners>
+
+    <test name="pw-regression-test-automation" parallel="classes" thread-count="20" >
+        <classes>
+                                 Client Context Testcases
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Income_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Employment_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Identity_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Affordability_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Allocation_DepositAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Complete_Verification_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Complete_Allocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Income_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Employment_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Identity_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Affordability_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Allocation_DepositAllocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Complete_Verification_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_Complete_Allocation_AtomicFI"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_PDSupportFalseAllocation_Argyle"/>
+            <class name="com.paywallet.UItestCase.TC_SDK_Client_Context_PDSupportFalseAllocationAtomicFI"/>
+
+        </classes>
+    </test>
+</suite>
